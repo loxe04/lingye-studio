@@ -4,12 +4,63 @@
 <meta charset="UTF-8">
 <title>风铃俱乐部-主页</title>
 <style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+  }
+  li {
+    float: left;
+  }
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover, .dropdown:hover, .dropbtn {
+    background-color: #000000;
+  }
+  .dropdown {
+    
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
   body {
+    background-color: #778899;
     color:#FFFFFF;
   }
 </style>
 </head>
 <body>
+  <ul>
+    <li><a class="active" href="https://loxe04.github.io/">主页</a></li>
+    <div class="dropdown">
+      <a href="#" class="dropbtn">啥也不是</a>
+       <div class="dropdown-content">
+        <a href="#">说了啥也不是！(>_<)</a>
+     </div>
+    </div>
+  </ul>
   <h1>风铃俱乐部</h1>
   <h4>欢迎来到风铃俱乐部！</h4>
   <p>我们的网站目前还在开发中，敬请期待……<p>
